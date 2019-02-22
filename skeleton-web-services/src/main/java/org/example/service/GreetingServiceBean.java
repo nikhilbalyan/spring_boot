@@ -16,7 +16,7 @@ public class GreetingServiceBean implements GreetingService {
 
 	@Override
 	public Greeting findOne(Long id) {
-		// TODO Auto-generated method stub
+		Greeting greeting = greetingMap
 		return null;
 	}
 

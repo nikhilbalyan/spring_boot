@@ -86,10 +86,11 @@ public class GreetingController {
 	public ResponseEntity<Greeting> deleteGreeting(
 			@PathVariable("id") BigInteger id, @RequestBody Greeting greeting) {
 		boolean deleted = delete(id);
-		if(deleted) {
+		if(!deleted) {
 			return new ResponseEntity<Greeting>(
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+		return new ResponseEntity<Greeting>(HttpStatus.NO_CONTENT);
 	}
 	
 }
