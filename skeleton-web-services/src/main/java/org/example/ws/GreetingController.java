@@ -1,4 +1,4 @@
-package org.example.ws.web.api;
+package org.example.ws;
 
 import java.util.Collection;
 
