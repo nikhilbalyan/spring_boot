@@ -23,7 +23,8 @@ public class GreetingBatchBean {
 	private GreetingService greetingService;
 	
 	// scheduler that runs at 0 and 30 secs of every min of every hour of every day
-	@Scheduled(cron = "0.30 * * * * *")
+//	@Scheduled(cron="0.30 * * * * *")
+	@Scheduled(fixedDelay = 1000)
 	public  void cronJob() {
 		logger.info("> cronJob");
 		
