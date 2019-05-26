@@ -10,10 +10,12 @@ import org.example.service.GreetingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.scheduling.annotation.Scheduled;
 //import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+@Profile("batch")
 @Component // annotating the bean class with component for ensuring the spring boot registers this class during initialization
 public class GreetingBatchBean {
 	

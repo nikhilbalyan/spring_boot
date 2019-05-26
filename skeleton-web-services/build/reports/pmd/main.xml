@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.4.1" timestamp="2019-05-07T22:23:43.189">
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/App.java">
+<violation beginline="24" endline="24" begincolumn="53" endcolumn="61" rule="SignatureDeclareThrowsException" ruleset="Strict Exceptions" package="org.example" class="App" method="main" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="24" endline="24" begincolumn="30" endcolumn="42" rule="UseVarargs" ruleset="Design" package="org.example" class="App" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="24" endline="24" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example" class="App" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="32" begincolumn="9" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example" class="App" method="cacheManager" variable="cacheManager" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cacheManager' could be declared final
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/model/Greeting.java">
+<violation beginline="15" endline="17" begincolumn="16" endcolumn="9" rule="UnnecessaryConstructor" ruleset="Controversial" package="org.example.model" class="Greeting" method="Greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#UnnecessaryConstructor" priority="3">
+Avoid unnecessary constructors - the compiler will generate these for you
+</violation>
+<violation beginline="15" endline="17" begincolumn="16" endcolumn="9" rule="UncommentedEmptyConstructor" ruleset="Design" package="org.example.model" class="Greeting" method="Greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UncommentedEmptyConstructor" priority="3">
+Document empty constructor
+</violation>
+<violation beginline="23" endline="23" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.model" class="Greeting" method="setId" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="29" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.model" class="Greeting" method="setText" variable="text" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'text' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/service/EmailServiceBean.java">
+<violation beginline="13" endline="74" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.service" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="15" endline="15" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.service" class="EmailServiceBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="org.example.service" class="EmailServiceBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'logger' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="15" endline="15" begincolumn="24" endcolumn="72" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="org.example.service" class="EmailServiceBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="18" endline="18" begincolumn="25" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="EmailServiceBean" method="send" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="21" endline="32" begincolumn="9" endcolumn="30" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.example.service" class="EmailServiceBean" method="send" variable="success" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'success' (lines '21'-'32').
+</violation>
+<violation beginline="24" endline="24" begincolumn="9" endcolumn="25" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="EmailServiceBean" method="send" variable="pause" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'pause' could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="18" endcolumn="26" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="org.example.service" class="EmailServiceBean" method="send" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="27" endline="29" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Empty Code" package="org.example.service" class="EmailServiceBean" method="send" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="40" endline="40" begincolumn="27" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="EmailServiceBean" method="sendAsync" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="18" endcolumn="26" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="org.example.service" class="EmailServiceBean" method="sendAsync" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="56" endline="56" begincolumn="48" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="EmailServiceBean" method="sendAsyncWithResult" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="59" endline="59" begincolumn="9" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="EmailServiceBean" method="sendAsyncWithResult" variable="response" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'response' could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="13" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="EmailServiceBean" method="sendAsyncWithResult" variable="success" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'success' could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="18" endcolumn="26" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="org.example.service" class="EmailServiceBean" method="sendAsyncWithResult" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/service/GreetingServiceBean.java">
+<violation beginline="20" endline="136" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.service" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="22" endline="22" begincolumn="20" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.service" class="GreetingServiceBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="20" endcolumn="25" rule="ImmutableField" ruleset="Design" package="org.example.service" class="GreetingServiceBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'logger' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="22" endline="22" begincolumn="20" endcolumn="68" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="org.example.service" class="GreetingServiceBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="26" endline="26" begincolumn="36" endcolumn="53" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.service" class="GreetingServiceBean" variable="greetingRepository" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="32" endcolumn="45" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.service" class="GreetingServiceBean" variable="counterService" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="78" endline="78" begincolumn="88" endcolumn="88" rule="EmptyStatementNotInLoop" ruleset="Empty Code" package="org.example.service" class="GreetingServiceBean" method="findAll" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="79" endline="79" begincolumn="17" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="findAll" variable="greetings" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greetings' could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="17" endcolumn="33" rule="UnnecessaryLocalBeforeReturn" ruleset="Design" package="org.example.service" class="GreetingServiceBean" method="findAll" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UnnecessaryLocalBeforeReturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'greetings'
+</violation>
+<violation beginline="87" endline="87" begincolumn="33" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="findOne" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="17" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="findOne" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greeting' could be declared final
+</violation>
+<violation beginline="90" endline="90" begincolumn="17" endcolumn="32" rule="UnnecessaryLocalBeforeReturn" ruleset="Design" package="org.example.service" class="GreetingServiceBean" method="findOne" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UnnecessaryLocalBeforeReturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'greeting'
+</violation>
+<violation beginline="96" endline="96" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="create" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="102" endline="102" begincolumn="17" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="create" variable="savedGreeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'savedGreeting' could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="45" endcolumn="46" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="org.example.service" class="GreetingServiceBean" method="create" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="105" endline="105" begincolumn="35" endcolumn="50" rule="AvoidThrowingRawExceptionTypes" ruleset="Strict Exceptions" package="org.example.service" class="GreetingServiceBean" method="create" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidThrowingRawExceptionTypes" priority="1">
+Avoid throwing raw exception types.
+</violation>
+<violation beginline="111" endline="111" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="update" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="112" endline="112" begincolumn="87" endcolumn="87" rule="EmptyStatementNotInLoop" ruleset="Empty Code" package="org.example.service" class="GreetingServiceBean" method="update" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="113" endline="113" begincolumn="17" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="update" variable="greetingPersisted" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greetingPersisted' could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="17" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="update" variable="updatedGreeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'updatedGreeting' could be declared final
+</violation>
+<violation beginline="118" endline="118" begincolumn="17" endcolumn="39" rule="UnnecessaryLocalBeforeReturn" ruleset="Design" package="org.example.service" class="GreetingServiceBean" method="update" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UnnecessaryLocalBeforeReturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'updatedGreeting'
+</violation>
+<violation beginline="122" endline="122" begincolumn="28" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.service" class="GreetingServiceBean" method="delete" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/ws/BaseController.java">
+<violation beginline="16" endline="81" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.ws" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="24" endline="24" begincolumn="26" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws" class="BaseController" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="26" endcolumn="74" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="org.example.ws" class="BaseController" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="37" endline="37" begincolumn="68" endcolumn="86" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleException" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exception' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="25" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleException" variable="request" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'request' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="90" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleException" variable="exceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'exceptionAttributes' could be declared final
+</violation>
+<violation beginline="43" endline="44" begincolumn="17" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleException" variable="responseBody" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'responseBody' could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="13" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleNoResultException" variable="noResultException" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'noResultException' is not assigned and could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="50" endcolumn="75" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleNoResultException" variable="request" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'request' is not assigned and could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="9" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleNoResultException" variable="exceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'exceptionAttributes' could be declared final
+</violation>
+<violation beginline="71" endline="73" begincolumn="9" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="BaseController" method="handleNoResultException" variable="responseBody" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'responseBody' could be declared final
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/ws/GreetingController.java">
+<violation beginline="9" endline="9" begincolumn="1" endcolumn="24" rule="UnusedImports" ruleset="Type Resolution" package="org.example.ws" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.slf4j.Logger'
+</violation>
+<violation beginline="10" endline="10" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Type Resolution" package="org.example.ws" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.slf4j.LoggerFactory'
+</violation>
+<violation beginline="23" endline="151" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.ws" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="26" endline="26" begincolumn="33" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws" class="GreetingController" variable="greetingService" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="26" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws" class="GreetingController" variable="emailService" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="getGreetings" variable="greetings" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greetings' could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="53" endcolumn="79" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="getGreeting" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="getGreeting" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greeting' could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="56" endcolumn="85" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="createGreeting" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="17" endcolumn="73" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="createGreeting" variable="savedGreeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'savedGreeting' could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="56" endcolumn="85" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="updateGreeting" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="17" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="updateGreeting" variable="updatedGreeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'updatedGreeting' could be declared final
+</violation>
+<violation beginline="90" endline="90" begincolumn="54" endcolumn="83" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="deleteGreeting" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'greeting' is not assigned and could be declared final
+</violation>
+<violation beginline="90" endline="90" begincolumn="25" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="deleteGreeting" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="116" endline="116" begincolumn="50" endcolumn="76" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="sendGreeting" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="117" endline="119" begincolumn="13" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="sendGreeting" variable="waitForAsyncResult" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'waitForAsyncResult' is not assigned and could be declared final
+</violation>
+<violation beginline="123" endline="126" begincolumn="13" endcolumn="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.example.ws" class="GreetingController" method="sendGreeting" variable="greeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'greeting' (lines '123'-'126').
+</violation>
+<violation beginline="133" endline="134" begincolumn="17" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="sendGreeting" variable="asyncResponse" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'asyncResponse' could be declared final
+</violation>
+<violation beginline="135" endline="135" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws" class="GreetingController" method="sendGreeting" variable="emailSent" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'emailSent' could be declared final
+</violation>
+<violation beginline="140" endline="140" begincolumn="18" endcolumn="26" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="org.example.ws" class="GreetingController" method="sendGreeting" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/ws/actuator/health/GreetingHealthIndicator.java">
+<violation beginline="16" endline="32" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.ws.actuator.health" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="19" endline="19" begincolumn="33" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.actuator.health" class="GreetingHealthIndicator" variable="greetingService" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.actuator.health" class="GreetingHealthIndicator" method="health" variable="greetings" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greetings' could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="41" endcolumn="54" rule="UseCollectionIsEmpty" ruleset="Design" package="org.example.ws.actuator.health" class="GreetingHealthIndicator" method="health" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UseCollectionIsEmpty" priority="3">
+Substitute calls to size() == 0 (or size() != 0, size() &gt; 0, size() &lt; 1) with calls to isEmpty()
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/ws/batch/GreetingBatchBean.java">
+<violation beginline="20" endline="82" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.ws.batch" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="22" endline="22" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.batch" class="GreetingBatchBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="org.example.ws.batch" class="GreetingBatchBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'logger' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="22" endline="22" begincolumn="24" endcolumn="72" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="org.example.ws.batch" class="GreetingBatchBean" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="25" endline="25" begincolumn="33" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.batch" class="GreetingBatchBean" variable="greetingService" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="17" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.batch" class="GreetingBatchBean" method="cronJob" variable="greetings" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'greetings' could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="17" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.batch" class="GreetingBatchBean" method="fixedRateJobWithInitialDelay" variable="pause" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'pause' could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.batch" class="GreetingBatchBean" method="fixedRateJobWithInitialDelay" variable="start" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'start' could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="17" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.batch" class="GreetingBatchBean" method="fixedDelayJobWithInitialDelay" variable="pause" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'pause' could be declared final
+</violation>
+<violation beginline="73" endline="73" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.batch" class="GreetingBatchBean" method="fixedDelayJobWithInitialDelay" variable="start" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'start' could be declared final
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/ws/util/AsyncResponse.java">
+<violation beginline="19" endline="19" begincolumn="15" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.util" class="AsyncResponse" variable="value" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="23" endcolumn="40" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.util" class="AsyncResponse" variable="executionException" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="21" endcolumn="52" rule="RedundantFieldInitializer" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" variable="isCompletedExceptionally" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#RedundantFieldInitializer" priority="3">
+Avoid using redundant field initializer for 'isCompletedExceptionally'
+</violation>
+<violation beginline="27" endline="27" begincolumn="21" endcolumn="44" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.util" class="AsyncResponse" variable="isCompletedExceptionally" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="31" endline="31" begincolumn="21" endcolumn="39" rule="RedundantFieldInitializer" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" variable="isCancelled" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#RedundantFieldInitializer" priority="3">
+Avoid using redundant field initializer for 'isCancelled'
+</violation>
+<violation beginline="31" endline="31" begincolumn="21" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.util" class="AsyncResponse" variable="isCancelled" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="35" endline="35" begincolumn="21" endcolumn="34" rule="RedundantFieldInitializer" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" variable="isDone" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#RedundantFieldInitializer" priority="3">
+Avoid using redundant field initializer for 'isDone'
+</violation>
+<violation beginline="35" endline="35" begincolumn="21" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.util" class="AsyncResponse" variable="isDone" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="40" endline="40" begincolumn="18" endcolumn="39" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.example.ws.util" class="AsyncResponse" variable="checkCompletedInterval" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="45" endline="47" begincolumn="12" endcolumn="5" rule="UncommentedEmptyConstructor" ruleset="Design" package="org.example.ws.util" class="AsyncResponse" method="AsyncResponse" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UncommentedEmptyConstructor" priority="3">
+Document empty constructor
+</violation>
+<violation beginline="53" endline="53" begincolumn="26" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="AsyncResponse" variable="val" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'val' is not assigned and could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="26" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="AsyncResponse" variable="ex" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'ex' is not assigned and could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="27" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="cancel" variable="mayInterruptIfRunning" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'mayInterruptIfRunning' is not assigned and could be declared final
+</violation>
+<violation beginline="114" endline="114" begincolumn="18" endcolumn="29" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="get" variable="timeout" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'timeout' is not assigned and could be declared final
+</violation>
+<violation beginline="114" endline="114" begincolumn="32" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="get" variable="unit" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'unit' is not assigned and could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="get" variable="timeoutInMillis" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'timeoutInMillis' could be declared final
+</violation>
+<violation beginline="141" endline="141" begincolumn="29" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="complete" variable="val" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'val' is not assigned and could be declared final
+</violation>
+<violation beginline="159" endline="159" begincolumn="42" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="completeExceptionally" variable="ex" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'ex' is not assigned and could be declared final
+</violation>
+<violation beginline="160" endline="160" begincolumn="22" endcolumn="25" rule="NullAssignment" ruleset="Controversial" package="org.example.ws.util" class="AsyncResponse" method="completeExceptionally" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#NullAssignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="173" endline="173" begincolumn="43" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="setCheckCompletedInterval" variable="millis" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'millis' is not assigned and could be declared final
+</violation>
+<violation beginline="188" endline="188" begincolumn="24" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="block" variable="timeout" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'timeout' is not assigned and could be declared final
+</violation>
+<violation beginline="189" endline="201" begincolumn="14" endcolumn="47" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.example.ws.util" class="AsyncResponse" method="block" variable="start" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'start' (lines '189'-'201').
+</violation>
+<violation beginline="189" endline="189" begincolumn="9" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="block" variable="start" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'start' could be declared final
+</violation>
+<violation beginline="194" endline="194" begincolumn="17" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.util" class="AsyncResponse" method="block" variable="now" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'now' could be declared final
+</violation>
+</file>
+<file name="/Users/nikhilbalyan10/Documents/spring_boot/spring_boot/skeleton-web-services/src/main/java/org/example/ws/web/DefaultExceptionAttributes.java">
+<violation beginline="11" endline="69" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.example.ws.web" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="22" endline="22" begincolumn="59" endcolumn="77" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="getExceptionAttributes" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exception' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="80" endcolumn="109" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="getExceptionAttributes" variable="httpRequest" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'httpRequest' is not assigned and could be declared final
+</violation>
+<violation beginline="23" endline="23" begincolumn="25" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="getExceptionAttributes" variable="httpStatus" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'httpStatus' is not assigned and could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="19" endcolumn="37" rule="UseConcurrentHashMap" ruleset="Controversial" package="org.example.ws.web" class="DefaultExceptionAttributes" method="getExceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#UseConcurrentHashMap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+<violation beginline="25" endline="25" begincolumn="19" endcolumn="95" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="getExceptionAttributes" variable="exceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'exceptionAttributes' could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="32" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="addHttpStatus" variable="exceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exceptionAttributes' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="13" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="addHttpStatus" variable="httpStatus" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'httpStatus' is not assigned and could be declared final
+</violation>
+<violation beginline="53" endline="53" begincolumn="37" endcolumn="75" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="addExceptionDetail" variable="exceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exceptionAttributes' is not assigned and could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="13" endcolumn="31" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="addExceptionDetail" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exception' is not assigned and could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="26" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="addPath" variable="exceptionAttributes" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exceptionAttributes' is not assigned and could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="13" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.example.ws.web" class="DefaultExceptionAttributes" method="addPath" variable="httpRequest" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'httpRequest' is not assigned and could be declared final
+</violation>
+</file>
+</pmd>
